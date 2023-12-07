@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --poppins: 'Poppins', san-serif;
+    
+    --primary: rgba(25, 25, 25, 1);
+    --secondary: rgba(25, 25, 25, 1);
+    --grey: rgba(25, 25, 25, 1);
+}
+
+body {
+    font-family: var(--poppins);
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--grey);
+}
+
+/* Mobile First Design */
+
+
+.nav__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__nav ul {
+    text-align: center;
+    display: none;
+}
+
+.header__nav ul li {
+    list-style: none;
+}
+
+.hero__myself {
+    width: 30%;
+    min-width: 100px
+}
+
+@media (min-width: 900px) {
+    header nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header svg {
+        display: none;
+    }
+
+    .header__nav ul {
+        display: flex;
+        gap: 1em;
+    }
+
+
+}
