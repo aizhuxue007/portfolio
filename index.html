@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,109 +8,282 @@
     <title>Aizhu Xue</title>
     <link rel="stylesheet" href="stylesheets/styles.css">
 </head>
+
 <body>
     <header>
         <nav class="header__nav">
-            <div class="nav__top">
-  
-                <a class="logo" href="">AIZHU XUE</a>
-                <svg width="48" height="48" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path fill="#000000" d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10a10 10 0 0 0 10-10A10 10 0 0 0 12 2M6 7h12v2H6V7m0 4h12v2H6v-2m0 4h12v2H6v-2Z"/>
-                </svg>
+            <div class="container">
+                <div class="nav__top">
+                    <div class="logo">
+                        <a class="logo_home-link" href="">AIZHU XUE</a>
+                    </div>
+                    <svg class="nav__mobile-icon" width="48" height="48" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#000000"
+                            d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10a10 10 0 0 0 10-10A10 10 0 0 0 12 2M6 7h12v2H6V7m0 4h12v2H6v-2m0 4h12v2H6v-2Z" />
+                    </svg>
+                    <ul>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Projects</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href=""><button class="button primary-cta">Hire me</button></a></li>
+                    </ul>
+                </div>
+
 
             </div>
-           
-            <ul>
-                <li><a href="">ABOUT ME</a></li>
-                <li><a href="">WORK</a></li>
-                <li><a href="">BLOG</a></li>
-                <li><a href="">HIRE ME</a></li>
-            </ul>
         </nav>
-        <main class="hero">
-            <div class="hero__description">
-                <h1>HEY, I'M AIZHU XUE</h1>
-                <p>As an adept software engineer specializing in full-stack web development, I excel in crafting responsive web applications using HTML, CSS, JavaScript, React, Node.js, Express, and PostgreSQL. </p>
-            </div>
-            <img class="hero__myself" src="assets/professional-headshot.png" alt="professional picture of myself">
-        </main>
+
     </header>
-    <section class="skills">
-        <h3>MY SKILLS</h3>
-        <div class="skills__grid">
-            <div class="skill">React</div>
-            <div class="skill">Node</div>
-            <div class="skill">Express</div>
-            <div class="skill">PostgreSQL</div>
-        </div>
-    </section>
-    <section class="experience">
-        <h3>EXPERIENCE</h3>
-        <ul>
-            <li>
-                <div class="experience__description">Software Engineer at 100Devs Agency</div>
-            </li>
-            <li>
-                <div class="experience__description">
-                    Freelancing / Consulting
+
+    <main>
+        <div class="hero">
+            <div class="container">
+                <div class="hero__description">
+                    <div class="description__text">
+                        <h1>Hello, I'm Aizhu Xue</h1>
+                        <p>
+                            Fullstack software engineer leveraging code for
+                            business metrics.
+                        </p>
+                    </div>
+                    <div class="description__cta">
+                        <button class="button secondary-cta">Show resume</button>
+                        <button class="button primary-cta">Hire me</button>
+                    </div>
                 </div>
-            </li>
-            <li>
-                <div class="experience__description">
-                    Step Van Driver at Falcon Express LLC
+                <img class="hero__img" src="assets/professional-headshot.png" alt="professional picture of myself">
+            </div>
+        </div>
+
+        <section class="skills">
+            <div class="container ">
+                <h3>Skills</h3>
+                <div class="skills__grid">
+
+                  
+                    <div class="skill">
+                        <svg width="64" height="64" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+                            <g fill="none">
+                                <rect width="256" height="256" fill="#F4F2ED" rx="60" />
+                                <path fill="#00D8FF"
+                                    d="M128.001 146.951c10.304 0 18.656-8.353 18.656-18.656c0-10.303-8.352-18.656-18.656-18.656c-10.303 0-18.656 8.353-18.656 18.656c0 10.303 8.353 18.656 18.656 18.656" />
+                                <path stroke="#00D8FF" stroke-width="8.911"
+                                    d="M128.002 90.363c25.048 0 48.317 3.594 65.862 9.635C215.003 107.275 228 118.306 228 128.295c0 10.409-13.774 22.128-36.475 29.649c-17.162 5.686-39.746 8.654-63.523 8.654c-24.378 0-47.463-2.786-64.819-8.717C41.225 150.376 28 138.506 28 128.295c0-9.908 12.41-20.854 33.252-28.12c17.61-6.14 41.453-9.812 66.746-9.812z"
+                                    clip-rule="evenodd" />
+                                <path stroke="#00D8FF" stroke-width="8.911"
+                                    d="M94.981 109.438c12.514-21.698 27.251-40.06 41.249-52.24c16.864-14.677 32.914-20.425 41.566-15.436c9.017 5.2 12.288 22.988 7.463 46.41c-3.645 17.707-12.359 38.753-24.238 59.351c-12.179 21.118-26.124 39.724-39.931 51.792c-17.471 15.272-34.362 20.799-43.207 15.698c-8.583-4.946-11.865-21.167-7.747-42.852c3.479-18.323 12.21-40.812 24.841-62.723z"
+                                    clip-rule="evenodd" />
+                                <path stroke="#00D8FF" stroke-width="8.911"
+                                    d="M95.012 147.578c-12.549-21.674-21.093-43.616-24.659-61.826c-4.293-21.941-1.258-38.716 7.387-43.72c9.009-5.216 26.052.834 43.934 16.712c13.52 12.004 27.403 30.061 39.316 50.639c12.214 21.098 21.368 42.473 24.929 60.461c4.506 22.764.859 40.157-7.978 45.272c-8.574 4.964-24.265-.291-40.996-14.689c-14.136-12.164-29.26-30.959-41.933-52.849Z"
+                                    clip-rule="evenodd" />
+                            </g>
+                        </svg>
+                        <p>React</p>
+                    </div>
+                    <div class="skill">
+
+                        <svg width="64" height="64" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+                            <g fill="none">
+                                <rect width="256" height="256" fill="#F4F2ED" rx="60" />
+                                <path fill="#81CD39"
+                                    d="M119.878 31.116c4.919-2.815 11.325-2.828 16.239 0c24.722 13.97 49.452 27.917 74.17 41.895c4.65 2.619 7.759 7.793 7.712 13.15v84.045c.035 5.579-3.382 10.877-8.287 13.436c-24.641 13.893-49.27 27.802-73.907 41.695c-5.019 2.87-11.554 2.649-16.418-.457c-7.387-4.282-14.787-8.544-22.175-12.822c-1.51-.9-3.212-1.616-4.278-3.08c.943-1.27 2.628-1.428 3.997-1.983c3.083-.981 5.916-2.555 8.748-4.082c.717-.49 1.591-.302 2.278.136c6.317 3.622 12.579 7.35 18.917 10.937c1.352.781 2.721-.256 3.877-.9c24.18-13.667 48.39-27.281 72.567-40.952c.896-.431 1.391-1.382 1.318-2.363c.017-27.725.004-55.454.009-83.18c.102-1.112-.542-2.136-1.549-2.592c-24.555-13.829-49.099-27.678-73.65-41.51a2.557 2.557 0 0 0-2.892-.005c-24.552 13.837-49.09 27.7-73.642 41.527c-1.003.457-1.676 1.464-1.557 2.58c.005 27.726 0 55.455 0 83.184a2.352 2.352 0 0 0 1.336 2.334c6.551 3.715 13.111 7.404 19.667 11.107c3.694 1.987 8.228 3.169 12.298 1.646c3.59-1.288 6.107-4.953 6.039-8.765c.034-27.563-.017-55.13.025-82.69c-.09-1.223 1.071-2.234 2.261-2.118c3.148-.022 6.3-.043 9.448.008c1.314-.03 2.218 1.288 2.056 2.52c-.013 27.738.034 55.476-.021 83.213c.008 7.393-3.029 15.437-9.867 19.054c-8.423 4.363-18.835 3.438-27.157-.746c-7.204-3.596-14.08-7.84-21.156-11.692c-4.918-2.545-8.318-7.864-8.283-13.439V86.161c-.052-5.468 3.182-10.736 7.975-13.317c24.637-13.903 49.27-27.818 73.902-41.728" />
+                                <path fill="#81CD39"
+                                    d="M141.372 89.335c10.745-.692 22.248-.41 31.917 4.884c7.487 4.056 11.637 12.57 11.769 20.887c-.209 1.121-1.382 1.74-2.453 1.663c-3.117-.004-6.236.043-9.353-.021c-1.323.051-2.091-1.168-2.257-2.337c-.896-3.98-3.067-7.921-6.812-9.841c-5.75-2.878-12.416-2.733-18.687-2.673c-4.576.242-9.498.639-13.376 3.33c-2.977 2.039-3.881 6.155-2.819 9.47c1.002 2.38 3.749 3.148 5.997 3.856c12.95 3.387 26.672 3.049 39.373 7.506c5.26 1.817 10.404 5.35 12.204 10.856c2.355 7.38 1.323 16.2-3.928 22.124c-4.258 4.875-10.459 7.529-16.644 8.97c-8.228 1.835-16.767 1.882-25.123 1.067c-7.857-.896-16.034-2.96-22.099-8.313c-5.187-4.504-7.72-11.522-7.469-18.294c.06-1.144 1.199-1.942 2.295-1.848c3.139-.025 6.279-.034 9.418.005c1.254-.09 2.184.994 2.248 2.176c.579 3.791 2.004 7.771 5.31 10.018c6.381 4.117 14.388 3.835 21.694 3.95c6.052-.268 12.847-.349 17.787-4.35c2.606-2.282 3.378-6.1 2.674-9.384c-.763-2.773-3.664-4.065-6.155-4.91c-12.783-4.043-26.659-2.576-39.318-7.149c-5.14-1.816-10.11-5.25-12.084-10.53c-2.755-7.473-1.493-16.717 4.308-22.44c5.656-5.695 13.82-7.888 21.583-8.672" />
+                            </g>
+                        </svg>
+                        <p>NodeJS</p>
+                    </div>
+                    <div class="skill">
+
+                        <svg width="64" height="64" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+                            <g fill="none">
+                                <rect width="256" height="256" fill="#F4F2ED" rx="60" />
+                                <path fill="#0F0F0F"
+                                    d="M228 182.937a12.732 12.732 0 0 1-15.791-6.005c-9.063-13.567-19.071-26.522-28.69-39.755l-4.171-5.56c-11.454 15.346-22.908 30.08-33.361 45.371a12.23 12.23 0 0 1-15.012 5.894l42.98-57.659l-39.978-52.1a13.289 13.289 0 0 1 15.847 5.56c9.285 13.568 19.572 26.523 29.802 40.257c10.287-13.623 20.462-26.634 29.97-40.09a11.952 11.952 0 0 1 14.901-5.56l-15.513 20.573c-6.95 9.174-13.789 18.404-21.017 27.356a5.558 5.558 0 0 0 0 8.285c13.289 17.626 26.466 35.307 40.033 53.433M28 124.5c1.168-5.56 1.89-11.621 3.503-17.292c9.619-34.195 48.818-48.43 75.785-27.245c15.791 12.4 19.739 29.97 18.961 49.764H37.286c-1.446 35.363 24.075 56.714 56.713 45.816a33.864 33.864 0 0 0 21.518-23.965c1.724-5.56 4.504-6.505 9.786-4.893a45.145 45.145 0 0 1-21.573 32.972a52.263 52.263 0 0 1-60.884-7.784a54.767 54.767 0 0 1-13.678-32.138c0-1.89-.723-3.781-1.112-5.56A860.69 860.69 0 0 1 28 124.5m9.397-2.391h80.456c-.501-25.632-16.681-43.814-38.254-43.98c-24.02-.334-41.201 17.458-42.258 43.869z" />
+                            </g>
+                        </svg>
+                        <p>Express</p>
+                    </div>
+                    <div class="skill">
+
+                        <svg width="64" height="64" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+                            <g fill="none">
+                                <rect width="256" height="256" fill="#F4F2ED" rx="60" />
+                                <g clip-path="url(#skillIconsPostgresqlLight0)">
+                                    <path fill="#000"
+                                        d="M171.474 169.034c1.146-9.541.802-10.933 7.903-9.393l1.807.161c5.464.246 12.607-.879 16.875-2.826c9.036-4.191 14.393-11.194 5.485-9.352c-20.321 4.191-21.797-2.693-21.797-2.693c21.466-31.851 30.445-72.281 22.69-82.174c-21.122-27-57.692-14.231-58.303-13.894l-.197.035c-4.008-.843-8.438-1.336-13.571-1.406c-9.196-.14-16.171 2.412-21.473 6.427c0 0-65.229-26.874-62.198 33.799c.646 12.909 18.492 97.734 39.796 72.07c7.798-9.379 15.322-17.304 15.322-17.304c3.726 2.482 8.205 3.748 12.895 3.291l.365-.309a14.153 14.153 0 0 0 .148 3.642c-5.484 6.131-3.867 7.207-14.836 9.464c-11.095 2.285-4.57 6.356-.323 7.425c5.161 1.294 17.1 3.122 25.172-8.17l-.324 1.286c2.152 1.723 2.004 12.375 2.32 19.983c.317 7.608.816 14.717 2.37 18.9c1.554 4.184 3.375 14.977 17.789 11.953c12.045-2.58 21.256-6.3 22.099-40.851" />
+                                    <path stroke="#000" stroke-width="15.11"
+                                        d="M171.474 169.034c1.146-9.541.802-10.933 7.903-9.393l1.807.161c5.464.246 12.607-.879 16.875-2.826c9.036-4.191 14.393-11.194 5.485-9.352c-20.321 4.191-21.797-2.693-21.797-2.693c21.466-31.851 30.445-72.281 22.69-82.174c-21.122-27-57.692-14.231-58.303-13.894l-.197.035c-4.008-.843-8.438-1.336-13.571-1.406c-9.196-.14-16.171 2.412-21.473 6.427c0 0-65.229-26.874-62.198 33.799c.646 12.909 18.492 97.734 39.796 72.07c7.798-9.379 15.322-17.304 15.322-17.304c3.726 2.482 8.205 3.748 12.895 3.291l.365-.309a14.153 14.153 0 0 0 .148 3.642c-5.484 6.131-3.867 7.207-14.836 9.464c-11.095 2.285-4.57 6.356-.323 7.425c5.161 1.294 17.1 3.122 25.172-8.17l-.324 1.286c2.152 1.723 2.004 12.375 2.32 19.983c.317 7.608.816 14.717 2.37 18.9c1.554 4.184 3.375 14.977 17.789 11.953c12.045-2.58 21.256-6.3 22.099-40.851" />
+                                    <path fill="#336791"
+                                        d="M203.48 147.688c-20.32 4.19-21.796-2.693-21.796-2.693c21.466-31.852 30.445-72.282 22.696-82.175c-21.121-27-57.691-14.224-58.303-13.893l-.197.035a72.484 72.484 0 0 0-13.563-1.414c-9.197-.14-16.172 2.412-21.473 6.427c0 0-65.236-26.873-62.199 33.8c.647 12.909 18.493 97.734 39.797 72.07c7.847-9.436 15.371-17.361 15.371-17.361c3.726 2.482 8.205 3.748 12.895 3.291l.365-.309a14.243 14.243 0 0 0 .148 3.642c-5.484 6.131-3.867 7.207-14.836 9.464c-11.095 2.285-4.57 6.356-.323 7.425c5.161 1.294 17.1 3.122 25.172-8.17l-.324 1.286c2.152 1.723 3.656 11.201 3.403 19.793c-.253 8.593-.422 14.485 1.266 19.097c1.687 4.613 3.375 14.977 17.789 11.953c12.045-2.58 18.281-9.281 19.16-20.432c.619-7.932 2.011-6.765 2.11-13.852l1.125-3.361c1.286-10.758.21-14.224 7.628-12.607l1.807.162c5.464.246 12.615-.879 16.805-2.827c9.035-4.19 14.393-11.194 5.485-9.351z" />
+                                    <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="5.034"
+                                        d="M146.07 48.596c-2.25.703 36.31-14.097 58.233 13.908c7.735 9.893-1.23 50.323-22.697 82.174m-53.508 9.106c-.562 20.011.141 40.162 2.096 45c1.954 4.837 6.152 14.414 20.573 11.334c12.045-2.58 16.432-7.58 18.331-18.612l4.45-35.275zM110.816 53.469S45.537 26.779 48.575 87.45c.647 12.909 18.492 97.734 39.797 72.07c7.776-9.373 14.808-16.706 14.808-16.706z" />
+                                    <path stroke="#fff" stroke-linecap="round" stroke-linejoin="bevel"
+                                        stroke-width="5.034"
+                                        d="M181.613 144.664s1.407 6.891 21.797 2.686c8.909-1.842 3.544 5.161-5.484 9.352c-7.411 3.445-24.033 4.324-24.307-.422c-.703-12.27 8.747-8.543 8.065-11.616c-.619-2.77-4.852-5.484-7.636-12.262c-2.44-5.907-33.469-51.258 8.606-44.53c1.547-.316-10.969-40.077-50.344-40.654c-39.375-.577-38.13 48.41-38.13 48.41" />
+                                    <path stroke="#fff" stroke-linejoin="round" stroke-width="5.034"
+                                        d="M117.08 148.869c-5.484 6.131-3.867 7.207-14.835 9.464c-11.096 2.285-4.57 6.356-.324 7.425c5.161 1.294 17.1 3.122 25.172-8.178c2.461-3.445-.014-8.929-3.389-10.321c-1.631-.675-3.811-1.519-6.609 1.617z" />
+                                    <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="5.034"
+                                        d="M116.722 148.763c-.563-3.607 1.181-7.889 3.044-12.909c2.799-7.523 9.254-15.047 4.093-38.932c-3.847-17.79-29.672-3.706-29.672-1.294s1.167 12.235-.422 23.66c-2.088 14.921 9.492 27.535 22.823 26.248" />
+                                    <path fill="#fff" stroke="#fff" stroke-width="1.68"
+                                        d="M110.577 95.27c-.12.822 1.511 3.023 3.628 3.318c2.116.296 3.923-1.42 4.043-2.25c.119-.83-1.512-1.73-3.628-2.025c-2.117-.295-3.938.14-4.043.956z" />
+                                    <path fill="#fff" stroke="#fff" stroke-width=".837"
+                                        d="M175.011 93.59c.112.822-1.512 3.022-3.628 3.318c-2.117.295-3.938-1.42-4.043-2.25c-.106-.83 1.512-1.73 3.628-2.025c2.116-.295 3.937.14 4.043.956Z" />
+                                    <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="5.034"
+                                        d="M182.577 87.887c.351 6.469-1.393 10.863-1.618 17.747c-.323 9.998 4.768 21.445-2.904 32.906" />
+                                </g>
+                                <defs>
+                                    <clipPath id="skillIconsPostgresqlLight0">
+                                        <path fill="#fff" d="M38 38h180v180H38z" />
+                                    </clipPath>
+                                </defs>
+                            </g>
+                        </svg>
+                        <p>PostgreSQL</p>
+                    </div>
+
                 </div>
-            </li>
-        </ul>
-    </section>
-    <section class="my-work">
-        <h3>MY WORK</h3>
-        <div class="my-work__gallery">
-            <a href="https://github.com/aizhuxue007/100devs-simple-bible-api" target="_blank">
-                <article class="work">
-                    <img src="/assets/bible.jpeg" alt="Bible API">
-                </article>
-                <h4>Bible API</h4>
-            </a>
-            <a href=""><article class="work"></article></a>
-            <a href=""><article class="work"></article></a>
-        </div>
-    </section>
-    <section class="testimonials">
-        <h3>TESTIMONIALS</h3>
-        <div class="testimonials__carousel">
-            <p>Xue too good?</p>
-        </div>
-    </section>
-    <section class="blog">
-        <h3>LATEST BLOGPOSTS</h3>
-        <div class="blog__posts">
-            <article class="post">
-                <h4>Blog post 1</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, odit.</p>
-            </article>
-            <article class="post">
-                <h4>Blog post 2</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, odit.</p>
-            </article>
-            <article class="post">
-                <h4>Blog post 3</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, odit.</p>
-            </article>
-            
-        </div>
-    </section>
-    <footer>
-        <section class="cta">
-            <h2>LET'S TALK ABOUT THE NEXT BIG THING.</h2>
-            <button class="cta">HIRE ME</button>
-            <small>2023</small>
+            </div>
         </section>
-        <nav class="socials">
-            <div class="social"><i class="social-linkedin"></i></div>
-            <div class="social"><i class="social-github"></i></div>
-            <div class="social"><i class="social-email"></i></div>
-            <div class="social"><i class="social-x"></i></div>
-        </nav>
+
+        <section class="experience">
+            <div class="container">
+                <h3>Experience</h3>
+                <ul>
+                    <li>
+                        <div class="experience__description">Software Engineer at 100Devs Agency</div>
+                    </li>
+                    <li>
+                        <div class="experience__description">
+                            Freelance Web Developer
+                        </div>
+                    </li>
+                    <li>
+                        <div class="experience__description">
+                            Step Van Driver at Falcon Express LLC
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+
+
+
+    <section class="project">
+        <div class="container">
+            <h3>Projects</h3>
+            <div class="project__gallery">
+                <a href="https://github.com/aizhuxue007/100devs-simple-bible-api" target="_blank">
+                    <article class="project">
+                        <img src="/assets/bible.jpeg" alt="Bible API">
+                    </article>
+                    <h4>Bible API</h4>
+                </a>
+                <a href="">
+                    <article class="project"></article>
+                </a>
+                <a href="">
+                    <article class="project"></article>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="testimonials">
+        <div class="container">
+            <h3>TESTIMONIALS</h3>
+            <div class="testimonials__carousel">
+                <p>Xue too good?</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="blog">
+        <div class="container">
+            <h3>LATEST BLOGPOSTS</h3>
+            <div class="blog__posts">
+                <article class="post">
+                    <h4>Blog post 1</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, odit.</p>
+                </article>
+                <article class="post">
+                    <h4>Blog post 2</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, odit.</p>
+                </article>
+                <article class="post">
+                    <h4>Blog post 3</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, odit.</p>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container">
+            <section class="cta">
+                <h2>LET'S TALK ABOUT THE NEXT BIG THING.</h2>
+                <button class="button primary-cta">Hire me</button>
+                <div>
+                    <small>2023</small>
+                </div>
+
+            </section>
+            <nav class="socials">
+                <div class="social">
+                    <i class="social-linkedin">
+                        <svg width="48" height="48" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+                            <g fill="none">
+                                <rect width="256" height="256" fill="#fff" rx="60" />
+                                <rect width="256" height="256" fill="#0A66C2" rx="60" />
+                                <path fill="#fff"
+                                    d="M184.715 217.685h29.27a4 4 0 0 0 4-3.999l.015-61.842c0-32.323-6.965-57.168-44.738-57.168c-14.359-.534-27.9 6.868-35.207 19.228a.32.32 0 0 1-.595-.161V101.66a4 4 0 0 0-4-4h-27.777a4 4 0 0 0-4 4v112.02a4 4 0 0 0 4 4h29.268a4 4 0 0 0 4-4v-55.373c0-15.657 2.97-30.82 22.381-30.82c19.135 0 19.383 17.916 19.383 31.834v54.364a4 4 0 0 0 4 4M38 59.628c0 11.864 9.767 21.626 21.632 21.626c11.862-.001 21.623-9.769 21.623-21.631C81.253 47.761 71.491 38 59.628 38C47.762 38 38 47.763 38 59.627m6.959 158.058h29.307a4 4 0 0 0 4-4V101.66a4 4 0 0 0-4-4H44.959a4 4 0 0 0-4 4v112.025a4 4 0 0 0 4 4" />
+                            </g>
+                        </svg>
+                    </i>
+                </div>
+                <div class="social">
+                    <i class="social-github">
+                        <svg width="48" height="48" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+                            <g fill="none">
+                                <rect width="256" height="256" fill="#F4F2ED" rx="60" />
+                                <path fill="#161614"
+                                    d="M128.001 30C72.779 30 28 74.77 28 130.001c0 44.183 28.653 81.667 68.387 94.89c4.997.926 6.832-2.169 6.832-4.81c0-2.385-.093-10.262-.136-18.618c-27.82 6.049-33.69-11.799-33.69-11.799c-4.55-11.559-11.104-14.632-11.104-14.632c-9.073-6.207.684-6.079.684-6.079c10.042.705 15.33 10.305 15.33 10.305c8.919 15.288 23.394 10.868 29.1 8.313c.898-6.464 3.489-10.875 6.349-13.372c-22.211-2.529-45.56-11.104-45.56-49.421c0-10.918 3.906-19.839 10.303-26.842c-1.039-2.519-4.462-12.69.968-26.464c0 0 8.398-2.687 27.508 10.25c7.977-2.215 16.531-3.326 25.03-3.364c8.498.038 17.06 1.149 25.051 3.365c19.087-12.939 27.473-10.25 27.473-10.25c5.443 13.773 2.019 23.945.98 26.463c6.412 7.003 10.292 15.924 10.292 26.842c0 38.409-23.394 46.866-45.662 49.341c3.587 3.104 6.783 9.189 6.783 18.519c0 13.38-.116 24.149-.116 27.443c0 2.661 1.8 5.779 6.869 4.797C199.383 211.64 228 174.169 228 130.001C228 74.771 183.227 30 128.001 30M65.454 172.453c-.22.497-1.002.646-1.714.305c-.726-.326-1.133-1.004-.898-1.502c.215-.512.999-.654 1.722-.311c.727.326 1.141 1.01.89 1.508m4.919 4.389c-.477.443-1.41.237-2.042-.462c-.654-.697-.777-1.629-.293-2.078c.491-.442 1.396-.235 2.051.462c.654.706.782 1.631.284 2.078m3.374 5.616c-.613.426-1.615.027-2.234-.863c-.613-.889-.613-1.955.013-2.383c.621-.427 1.608-.043 2.236.84c.611.904.611 1.971-.015 2.406m5.707 6.504c-.548.604-1.715.442-2.57-.383c-.874-.806-1.118-1.95-.568-2.555c.555-.606 1.729-.435 2.59.383c.868.804 1.133 1.957.548 2.555m7.376 2.195c-.242.784-1.366 1.14-2.499.807c-1.13-.343-1.871-1.26-1.642-2.052c.235-.788 1.364-1.159 2.505-.803c1.13.341 1.871 1.252 1.636 2.048m8.394.932c.028.824-.932 1.508-2.121 1.523c-1.196.027-2.163-.641-2.176-1.452c0-.833.939-1.51 2.134-1.53c1.19-.023 2.163.639 2.163 1.459m8.246-.316c.143.804-.683 1.631-1.864 1.851c-1.161.212-2.236-.285-2.383-1.083c-.144-.825.697-1.651 1.856-1.865c1.183-.205 2.241.279 2.391 1.097" />
+                            </g>
+                        </svg>
+                    </i>
+                </div>
+                <!-- <div class="social">
+                    <i class="social-email">
+
+                    </i>
+                </div> -->
+                <div class="social">
+                    <i class="social-x">
+                        <svg width="48" height="48" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+                            <g fill="none">
+                                <rect width="256" height="256" fill="#fff" rx="60" />
+                                <rect width="256" height="256" fill="#1D9BF0" rx="60" />
+                                <path fill="#fff"
+                                    d="M199.572 91.411c.11 1.587.11 3.174.11 4.776c0 48.797-37.148 105.075-105.075 105.075v-.03A104.54 104.54 0 0 1 38 184.677c2.918.351 5.85.526 8.79.533a74.154 74.154 0 0 0 45.865-15.839a36.976 36.976 0 0 1-34.501-25.645a36.811 36.811 0 0 0 16.672-.636c-17.228-3.481-29.623-18.618-29.623-36.198v-.468a36.705 36.705 0 0 0 16.76 4.622c-16.226-10.845-21.228-32.432-11.43-49.31a104.814 104.814 0 0 0 76.111 38.582a36.95 36.95 0 0 1 10.683-35.283c14.874-13.982 38.267-13.265 52.249 1.601a74.105 74.105 0 0 0 23.451-8.965a37.061 37.061 0 0 1-16.234 20.424A73.446 73.446 0 0 0 218 72.282a75.023 75.023 0 0 1-18.428 19.13" />
+                            </g>
+                        </svg>
+                    </i>
+                </div>
+            </nav>
+        </div>
     </footer>
+
+    <script src="js/index.js"></script>
 </body>
+
 </html>
