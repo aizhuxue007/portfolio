@@ -131,8 +131,6 @@ main {
     flex-direction: column;
     justify-content: center;
     max-width: 50ch;
-    position: absolute;
-    top: 0;
     margin-top: 3em;
 }
 
@@ -141,15 +139,10 @@ main {
 }
 
 .hero__description {
-    margin-bottom: 2em;
+    margin-bottom: 1.5em;
 }
 
-.right {
-    display: flex;
-    justify-content: end;
-    position: sticky;
-    top: 72px;
-}
+
 
 .hero__img {
     min-width: 200px;
@@ -206,8 +199,20 @@ main {
         justify-content: space-between;
     }
 
+    .right {
+        display: flex;
+        justify-content: end;
+        position: sticky;
+        top: 72px;
+    }
+    
     .hero__img {
         width: 30%;
+    }
+
+    .hero__description {
+        position: absolute;
+        top: 0;
     }
 }
 
