@@ -125,6 +125,10 @@ main {
     margin: 6em 0;
 }
 
+.hero__description.container {
+    visibility: none;
+}
+
 .hero__description {
     flex-basis: 40%;
     display: flex;
@@ -178,11 +182,28 @@ main {
     margin-left: 2em;
 }
 
-.socials {
-    display: flex;
-    gap: 1.5em;
+
+.cta {
+    margin: 5em 0;
 }
 
+.cta h2 {
+    margin-bottom: 1.25em;
+}
+
+footer {
+    background-color: var(--thirty);
+    padding: 3em 0 2em 0;
+}
+.socials {
+    display: flex;
+    
+    margin-bottom: 2em;
+}
+
+small {
+    color: var(--sixty);
+}
 @media (min-width: 600px) {
     .project__gallery {
         display: flex;
@@ -238,5 +259,10 @@ main {
     .skill {
         display: flex;
         flex-direction: column;
+    }
+
+    .description__cta {
+        z-index: 1;
+        cursor: pointer;
     }
 }
